@@ -1,0 +1,29 @@
+/* Modo Escuro */
+
+body.dark-mode {
+    --primary-color: #486C84;
+    --secondary-color: #47637B;
+    --background-color: #0A0A0A;
+    --text-color: #EAE9FC;
+}
+body.dark-mode .sidebar {
+    box-shadow: 0.5px 0px 2px rgba(255, 255, 255, 0.1);
+}
+body.dark-mode .sidebar ul li a:hover {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+body.dark-mode .conteudo-principal {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+.dark-mode-toggle {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+body.dark-mode .dark-mode-toggle img {
+    filter: invert(1);
+}
+body.dark-mode .sidebar ul li a:hover{
+    background-color: var(--sidebar-color);
+}

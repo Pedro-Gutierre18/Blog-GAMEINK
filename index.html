@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameInk - Seu Site de Games e Notícias</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/darkmode.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+        <!-- Menu Lateral -->
+        <div class="sidebar">
+            <div class="topo">
+                <div class="logo"><img src="img/icons/logo1.png" alt="Logo do site (um lobo vestido de kimono segurando uma espada)">
+                    <span><b style="color: black;">GAME</b><b>INK</b></span>
+                </div>
+                <i class="fa-solid fa-bars" id="button"></i>
+            </div>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <i class="fa-solid fa-house"></i>
+                        <span class="item-menu">Inicio</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="noticias.html">
+                        <i class="fas fa-newspaper"></i>
+                        <span class="item-menu">Noticias</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="jogos.html">
+                        <i class="fa-solid fa-gamepad"></i>
+                        <span class="item-menu">Jogos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="filmes.html">
+                        <i class="fas fa-film"></i>
+                        <span class="item-menu">Filmes</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="configurações.html">
+                        <i class="fas fa-cog"></i>
+                        <span class="item-menu">Configurações</span>
+                    </a>
+                </li>                
+            </ul>
+
+            <div>
+                <ul>
+                    <li class="dark-mode-toggle">
+                        <a href="">
+                            <i class="fa-sharp-duotone fa-solid fa-moon"></i>
+                            <span class="item-menu">Darkmode</span>
+                        </a>
+                    </li>  
+                    <li>
+                        <a href="">
+                            <i class="fa-sharp fa-solid fa-right-from-bracket"></i>
+                            <span class="item-menu">Sair</span>
+                        </a>
+                    </li> 
+                </ul>
+            </div>
+
+        </div>
+        <!-- Fim Menu Lateral -->
+        
+        <!-- Barra Site -->
+        <div class="barra-site">
+            <img src="img/icons/logo1.png" alt="Logo do site (um lobo vestido de kimono segurando uma espada)">
+        </div>
+        <!-- Fim Barra Site -->   
+
+        <!-- Conteudo Principal -->
+        <div class="conteudo-principal">
+
+            <!-- Slider -->
+            <section class="container-slider">
+                <div class="slider-wrapper">
+                    <div class="slider">
+                        <div class="slide">
+                            <img src="img/filmes-series/onepiece.png" alt="Principais personagens de One Piece no arco de Egghead" id="slide-1">
+                        </div>
+                        <div class="slide">
+                            <img src="img/noticias/eventos/tokyo-ubi.jpg" alt="Logo da Ubisoft com alguns de seus jogos" id="slide-2">
+                        </div>
+                        <div class="slide">
+                            <img src="img/noticias/eventos/bgs.webp" alt="Logo da Brasil Games Show" id="slide-3">
+                        </div>
+                    </div>
+                    <div class="slider-text">
+                        <div class="slide-text" data-slide="0">
+                            <h2>One Piece</h2>
+                            <p>Novo episódio já está disponivel!</p>
+                        </div>
+                        <div class="slide-text" data-slide="1">
+                            <h2>Ubisoft cancela participação na Tokyo Games Show 2024</h2>
+                            <p>A Ubisoft cancelou sua aparição na Tokyo Game Show 2024, apenas dois dias antes do evento começar.</p>
+                        </div>
+                        <div class="slide-text" data-slide="2">
+                            <h2>O que esperar do evento</h2>
+                            <p>Novas atrações prometem agitar o maior evento de games da América Latina!</p>
+                        </div>
+                    </div>
+                    <div class="slider-nav">
+                        <a href="#slide-1" class="slider-nav-item" data-slide="0"></a>
+                        <a href="#slide-2" class="slider-nav-item" data-slide="1"></a>
+                        <a href="#slide-3" class="slider-nav-item" data-slide="2"></a>
+                    </div>
+                </div>
+            </section>
+            <!-- Fim Slider -->
+            
+            <!-- Jogos -->
+            <section class="jogos-destaque">
+                <h2><i class="fa-solid fa-gamepad"></i> Jogos em Destaque</h2>
+                <div class="jogos">
+                    <div class="jogo-card">
+                        <img src="img/jogos/zelda.png" alt="Nome do Jogo 1">
+                        <a href=""><h3>AstroBot (2024)</h3></a>
+                        <p>Jogo de plataforma 3D com Astro Bot explorando universo da PlayStation.</p>
+                    </div>
+                    <div class="jogo-card">
+                        <img src="img/jogos/plucky squire.jpg" alt="Nome do Jogo 2">
+                        <a href=""><h3>The Plucky Squire</h3></a>
+                        <p>Aventura mágica alternando entre mundos 2D e 3D.</p>
+                    </div>
+                    <div class="jogo-card">
+                        <img src="img/jogos/stalker 2.jpeg" alt="Nome do Jogo 3">
+                        <a href=""><h3>S.T.A.L.K.E.R. 2</h3></a>
+                        <p>Sobrevivência em primeira pessoa na Zona de Exclusão de Chernobyl.</p>
+                    </div>
+                    <div class="jogo-card">
+                        <img src="img/jogos/zelda.png" alt="Nome do Jogo 4">
+                        <a href=""><h3>The Legend of Zelda: Echoes of Wisdom</h3></a>
+                        <p>Zelda explora Hyrule usando “ecos” para resolver quebra-cabeças.</p>
+                    </div>
+                </div>
+            </section>
+            <!-- Fim Jogos -->
+
+            <!-- Destaques -->
+            <section class="conteiner-destaques">
+                <h2><i class="fas fa-newspaper"></i> Destaques</h2>
+                    <article class="destaques">
+                        <img src="img/filmes-series/arcane2.png" alt="Imagem ilustrativa da 2ªtemporada de Arcane">
+                        <div class="conteudo-destaque">
+                            <h3><a href="series1.html">2ª temporada de Arcane: confira trailer, data de estreia e mais!</a></h3>
+                            <p>Venha confirir o novo trailer da 2ª temporada de Arcane.</p>
+                            <p><i class="far fa-clock"></i>publicado 13/06/2024</p> 
+                        </div>
+                    </article>
+                    <article class="destaques">
+                        <img src="img/noticias/eventos/tokyo-xbox.jpg" alt="Imagem com os principais candidatos a prefeito de São Paulo">
+                        <div class="conteudo-destaque">
+                            <h3><a href="noticias1.html">Xbox na Tokyo Game Show 2024: data, horários de início e o que esperar</a></h3>
+                            <p>Com a chegada do evento Tokyo  Game Show 2024 do Xbox, que promete uma série de revelações e atualizações para os títulos first-party e third-party do Xbox.</p>
+                            <p><i class="far fa-clock"></i>publicado 25/09/2024</p>
+                        </div>
+                    </article>
+                    <article class="destaques">
+                        <img src="img/noticias/tecnologia/twitter.webp" alt="Imagem ilustrativa dos jogos mais populares do Game Pass">
+                        <div class="conteudo-destaque">
+                            <h3><a href="jogos1.html">O impacto global do X (antigo Twitter)</a></h3>
+                            <p>"A gestão de Elon Musk no X só evidencia a necessidade de uma maior regulamentação das plataformas digitais", escreve Salvio Kotter</p>
+                            <p><i class="far fa-clock"></i>publicado 15/09/2024</p>
+                        </div>
+                    </article>
+                    <article class="destaques">
+                        <img src="img/noticias/jogos/switch2.jpg" alt="Principais personagens de One Piece no arco de Egghead">
+                        <div class="conteudo-destaque">
+                            <h3><a href="series2.html">Fotos vazadas do Nintendo Switch 2 são 'quase certamente reais', dizem especialistas em tecnologia</a></h3>
+                            <p>A Nintendo segue sem se pronunciar sobre o vazamento.</p>
+                            <p><i class="far fa-clock"></i>publicado 14/09/2024</p>
+                        </div>
+                    </article>
+            </section>
+            <!-- Destaques -->
+
+        </div> 
+        <!-- Fim Conteudo Principal -->
+        
+        <!-- Cabeçalho -->
+         <div id="cabecalho">
+            <p>Website by <b>Pedro Gutierre</b></p>
+         </div>
+        <!-- FimCabeçalho -->
+
+        <!-- Links JS -->
+        <script src="js/darkmode.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/slider.js"></script>
+        <!-- Fim Links JS -->
+</body>
+</html>

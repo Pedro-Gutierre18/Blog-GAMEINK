@@ -1,0 +1,158 @@
+:root {
+    --primary-color: #1B3A5D;
+    --secondary-color: #3C8DAD;
+    --accent-color: #FFC914;
+    --background-color: #F5F5F5;
+    --text-color:#2E2E2E;
+    --white-text:#FFFF;
+    --icons-color:#FFFF;
+}
+
+/* CSS para dispositivos moveis */
+@media screen and (max-width: 768px) {
+
+    /* sidebar */
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: -250px;
+        height: 100vh;
+        width: 60px;
+        background-color: var(--primary-color);
+        padding: .4rem .8rem;
+        transition: all 0.3s ease;
+        z-index: 1000;
+        box-shadow: 0.5px 0px 2px;
+    }
+    .sidebar.active {
+        width: 250px;
+        left: 0;
+    }
+    .sidebar #button {
+        position: fixed;
+        left: 17rem;
+        top: 1rem;
+        border: none;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        cursor: pointer;
+        z-index: 1001;
+    }
+    .sidebar.active  #button{
+        position: absolute;
+    }
+    /* fim sidebar */
+
+    /* Slider */
+    .container-slider  {
+        margin: 4.5rem 0 2.5rem 0;
+    }
+    .slider-text .slide-text {
+        min-height: 2rem;
+    }
+    .slide-text h2 {
+        font-size: 5rem;
+        margin-bottom: 5px;
+    }
+    .slide-text p {
+        font-size: 14px;
+    }
+    .slider-nav {
+        top: 94%;
+    }
+    .slider-nav-item {
+        width: 0.5rem;
+        height: 0.5rem;
+    }
+    /* Fim Slider */
+
+    /* Barra Site */
+    .barra-site {
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+    /* Fim Barra Site */
+
+    /* Conteudo principal */
+    .conteudo-principal {
+        margin-left: 0;
+        padding: 1rem;
+        transition: all 0.5s ease;
+        width: 100%;
+        align-items: center;
+    }
+    .conteudo-principal  h2{
+        font-size: 1.85rem;
+    }
+    /* Fim Conteudo principal */
+
+    /* Jogos */
+    .jogos-destaque .jogos {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .jogos-destaque .jogos .jogo-card {
+        width: 100%;
+        margin: 0;
+    }
+    .jogos-destaque .jogos .jogo-card img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    .jogos-destaque .jogos .jogo-card h3 {
+        font-size: 1rem;
+        padding: 0 0.3rem;
+    }
+    .jogos-destaque .jogos .jogo-card p {
+        font-size: 0.9rem;
+        padding: 0 0.3rem;
+    }
+    /* Fim Jogos */
+
+    /* Destaques */
+    .conteiner-destaques h2,
+    .jogos-destaque h2 {
+        max-width: 100%;
+        width: 100%;
+        font-size: 1.8rem;
+    }
+    .conteiner-destaques .destaques {
+        flex-direction: column;
+    }
+    .conteiner-destaques .destaques img {
+        width: 100%;
+        max-width: 650px;
+        height: auto;
+        object-fit: cover;
+        border: none;
+    }
+      .conteiner .destaques h3{
+          margin-top: 10px;
+    }
+    /* Fim Destaques */
+
+    /* Cabeçalho */
+    #cabecalho {
+        margin-left: 0;
+    }
+    /* Fim Cabeçalho */
+
+    /* Site Noticias */
+    .principais-noticias {
+        justify-content: start;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 4.5rem;
+        gap: 0.8rem;
+        padding: 0.1rem;
+    }
+    .principais-noticias .noticia-card {
+        min-width: 48%;
+    }
+    .principais-noticias .noticia-card .texto-noticias{
+        padding: 5px;
+    }
+    /* Fim Noticias */
+}
